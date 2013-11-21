@@ -1,0 +1,14 @@
+<#@ Template Language="C#" HostSpecific="True" Inherits="DynamicTransform" #>
+<#@ Output Extension="cs" #>
+using XSockets.Core.Configuration;
+
+namespace <#= Model.Namespace #>
+{ 
+    /// <summary>
+    /// Each ConfigurationSetting class will provide a new server
+    /// </summary>
+    public class <#= Model.ClassName #> : ConfigurationSetting
+    {
+        public <#= Model.ClassName #>():base("<#= Model.URI #>"){}
+    }
+}

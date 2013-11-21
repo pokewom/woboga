@@ -1,0 +1,13 @@
+﻿<#@ Template Language="VB" HostSpecific="True" Inherits="DynamicTransform" #>
+<#@ Output Extension="vb" #>
+Imports XSockets.Core.Configuration
+
+''' <summary>
+''' Each ConfigurationSetting class will provide a new server
+''' </summary>
+Public Class <#= Model.ClassName #>
+	Inherits ConfigurationSetting
+	Public Sub New()
+		MyBase.New("<#= Model.URI #>")
+	End Sub
+End Class
