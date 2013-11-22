@@ -7,6 +7,6 @@ namespace WobogaServer.App_Start
     /// </summary>
     public class XConfig : ConfigurationSetting
     {
-        public XConfig():base("ws://wobogasi.apphb.com:80"){}
+        public XConfig() : base("ws://wobogasi.apphb.com:4502") { }
     }
 }
